@@ -1,0 +1,135 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+*{	
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	font-family: "arial";
+
+}
+
+/* Site Background Color */
+body{
+	background: #2c3e50;
+
+}
+
+/* Card Position -> Centered */
+.middle{ 
+	position: absolute;
+	top: 50%;
+	left: 50%; 
+	transform: translate(-50%,-50%);
+	
+}
+
+/* Card Size */
+.card{
+	width: 340px;
+	height: 480px;
+		
+	
+	/* affects cursor -> pointer */
+	cursor: pointer; 
+} 
+
+/* Back Avatar */
+.avatar {
+  vertical-align: middle;
+  width: 70px;
+  height: 70px;
+  padding: 20px;
+  
+  border-radius: 50%;	/* avatar Corner Radius */
+}
+
+/* Text Container */
+.front, .back{
+	/*scale card w/h (post/global) */
+	/*removing this mirrors front to back */
+	width: 100%;
+	height: 100%;
+	
+	overflow: hidden;
+	backface-visibility: hidden;
+	position: absolute;
+	
+	/* Change Transition -> Spinning */
+ 	transition: transform .6s linear;
+		
+}
+
+.front img{
+	height: 100%;
+}
+.front {
+	transform: perspective(600px) rotateY(0deg);
+}
+
+/* Card Back */
+.back {
+	background: #f1f1f1;
+	transform: perspective(600px) rotateY(180deg);
+}
+
+/* Card Back Text */
+.back-content{
+	color: #2c3e50;	/* 2nd Color */
+	text-align: center;
+	width: 100%
+
+}
+
+/* Social Media Container */
+.sm{
+	margin: 20px 0;
+}
+
+/* Social Media Icons */
+.sm a{
+	display: inline-flex;
+	width: 40px;
+	height: 40px;
+	justify-content: center;
+	align-items: center;
+	color: #2c3e50; /* 2nd Color */
+	font-size: 18px;
+	transition: 0.4s;
+	border-radius: 50%;
+}
+/* Inverts SMI Colors on Hover*/
+.sm a:hover{
+	background: #2c3e50; /* *2nd Color */ 
+	color: white;
+}
+.card:hover > .front{
+	transform: perspective(600px) rotateY(-180deg);
+	
+} 
+.card:hover > .back{
+	/* idea: change to rotateY(90deg) for book like flip*/
+	transform: perspective(600px) rotateY(0deg);
+	
+} 
+
+/* Top left text */
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+
+  margin: 0;
+  font-weight: 900;
+ 
+}
+
+.typed {
+color: black;
+
+}
+
+#example {
+margin: 0;
+}
