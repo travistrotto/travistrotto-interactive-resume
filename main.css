@@ -1,0 +1,284 @@
+
+/* Body */
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+#content-wrap {
+  padding-bottom: 2.5rem;    /* Footer height */
+}
+
+/* Footer */
+#footer {
+  overflow: hidden;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 10.5rem;     
+  /* Footer height */
+}
+
+#footer p {
+  text-align: center;
+  color: #D6E8FF;
+  font-size: 10px;
+
+}
+
+.link a {
+  color: white;
+}
+
+#footer button {
+justify-content: center;
+
+}
+
+/* Button Styles */
+.myButton {
+	box-shadow:inset 0px 1px 0px 0px #7a8eb9;
+	background:linear-gradient(to bottom, #637aad 5%, #5972a7 100%);
+	background-color:#637aad;
+	border:1px solid #314179;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:13px;
+	font-weight:bold;
+	padding:6px 12px;
+	text-decoration:none;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #5972a7 5%, #637aad 100%);
+	background-color:#5972a7;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+
+/* Tab Styles */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 16px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+  height: auto;
+
+
+}
+
+/* Experience */
+.job1 {
+	height:20px;
+}
+
+.tab h2,h3,h5 {
+	padding-left:4px;
+	color: #2c3e50;
+	 height: auto;
+}
+
+.tabcontent p {
+	font-size: 14px;
+}
+
+#showcase {
+
+}
+
+.long p,h5,h6 {
+	padding-top: 3px;
+}
+
+/* Projects */
+#workLogo {
+ padding:10px;
+ height: 50%;
+ width: 50%;
+}
+
+
+#app {
+  padding-left: 4px;
+}
+
+#languagesKnown {
+
+}
+
+#mycontact {
+  border-radius: 7px;
+  width: 215px;
+  height: 80px;
+  position: absolute;
+  z-index: 9;
+  background-color: #f1f1f1;
+  border: 1px solid #d3d3d3;
+  text-align: left;
+
+  right: 50px;
+  bottom: 466px;
+
+  overflow:hidden;
+}
+
+#mycontact p {
+	padding-top: 2px;
+	padding-left: 6px;
+	padding-right: 6px;
+
+}
+
+#mycontactheader {
+  font-style: italic;
+  text-align: center;
+  padding: 10px;
+  cursor: move;
+  z-index: 10;
+  background-color: #2c3e50;
+  color: #fff;
+}
+
+#mylanguages {
+  border-radius: 7px;
+  width: 215px;
+  height: 140px;
+  position: absolute;
+  z-index: 9;
+  background-color: #f1f1f1;
+  border: 1px solid #d3d3d3;
+  text-align: left;
+  right: 50px;
+  bottom: 300px;
+
+  overflow:hidden;
+}
+
+#mylanguages p {
+	padding-top: 2px;
+	padding-left: 6px;
+	padding-right: 6px;
+
+}
+
+#mydivheader {
+  font-style: italic;
+  text-align: center;
+  padding: 10px;
+  cursor: move;
+  z-index: 10;
+  background-color: #2c3e50;
+  color: #fff;
+}
+
+
+#mywork {
+  border-radius: 7px;
+  width: 315px;
+
+  position: absolute;
+  z-index: 9;
+  background-color: #f1f1f1;
+  border: 1px solid #d3d3d3;
+  text-align: left;
+  left: 50px;
+  top: 500px;
+  height: auto;
+
+  overflow:auto;
+}
+
+#mywork p {
+	/* font-style: italic; */
+	padding-top: 2px;
+	padding-left: 6px;
+	padding-right: 6px;
+
+}
+
+#projects {
+
+}
+
+#myprojects {
+  border-radius: 7px;
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  z-index: 9;
+  background-color: #f1f1f1;
+  border: 1px solid #d3d3d3;
+  text-align: center;
+  left: 50px;
+  bottom: 500px;
+
+  overflow:auto;
+}
+
+#myprojects p {
+	/* font-style: italic; */
+	padding-top: 2px;
+	padding-left: 6px;
+	padding-right: 6px;
+
+
+}
+
+
+.myButton2 {
+	box-shadow:inset 0px 1px 0px 0px #9acc85;
+	background:linear-gradient(to bottom, #74ad5a 5%, #68a54b 100%);
+	background-color:#74ad5a;
+	border:1px solid #3b6e22;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:13px;
+	font-weight:bold;
+	padding:6px 12px;
+	text-decoration:none;
+}
+.myButton2:hover {
+	background:linear-gradient(to bottom, #68a54b 5%, #74ad5a 100%);
+	background-color:#68a54b;
+}
+.myButton2:active {
+	position:relative;
+	top:1px;
+}
+
+     
