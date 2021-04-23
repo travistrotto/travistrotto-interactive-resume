@@ -8,104 +8,179 @@
    	-	
     -	Author: Travis Trotto
     -	Date Created: 04/22/21
-    -	Date Last Edited: 04/22/21
+    -	Date Last Edited: 04/23/21
     -
     -->
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/TypewriterJS/2.17.0/core.min.js"></script>
+<script src="hide.js"></script>
+<script src="slideshow.js"></script>
 <script src="https://kit.fontawesome.com/11c986c8ed.js"></script>
 <link href="styles.css" rel="stylesheet" type="text/css">
+<link href="main.css" rel="stylesheet" type="text/css">
 <link href="slideshow.css" rel="stylesheet" type="text/css">
 </head>
-
-
-
 <body>
-<div class="container">
+<div id="page-container">
+  <div id="content-wrap">
+      <!-------- 3DFlipCard -------->  
+      <div class="card middle">  
 
-<!-------- 3DFlipCard -------->  
-	<div class="card middle">    	
-    	<div class="front">      	
-      <!----- Front Image ----->
-       		<div class="mySlides fade"><img src="img/me.jpg" alt="" width="100%"></div>
-          <div class="mySlides fade"><img src="img/me.jpg" alt="" width="100%"></div>
+          <div class="front">      	
+            <!----- Front Image ----->
 
+             		<div class="fade"><img src="img/me.jpg" alt="" width="100%"></div>
+                <div class="top-left-text"><h2>Travis Trotto</h2><div id="app"></div>
+                </div>
+          </div>
 
-          <div class="top-left-text"><h2>Travis Trotto</h2>
-            <div id="app"></div>
+          <script src="hacker_text.js"></script>
+          <!-----------f----------->          
+          <div class ="back">
+              <div class="back-content middle">
+              <!---- Back Avatar ---->            
+                  <img src="img/me2.jpg" alt="Avatar" class="avatar">         
+                  <!----- Back Text ----->         
+                  <h2>Travis Trotto</h2>
+                  <span>Future Software Engineer</span>
+                  <!--- Social Icons ---->
+                  <div class ="sm">
+                      <a href="https://www.linkedin.com/in/travistrotto/"><i class="fab fa-linkedin"></i></a>
+                      <a href="https://github.com/travistrotto"><i class="fab fa-github"></i></a>
+                      <a href="https://www.youtube.com/channel/UCvVsIlHp5JnKvUb8tvJLOoQ"><i class="fab fa-youtube"></i></a>
+                      <a href="https://drive.google.com/drive/folders/1DgfI4p-N_CVdPjyVo9V2hBab6_-d-329?usp=sharing"><i class="fab fa-google-drive"></i></a>
+                  </div>
+              </div>
+            <!-----------b----------->
           </div>
       </div>
-      <script src="hacker_text.js"></script>
-      <!-----------f----------->          
-      <div class ="back">
-        	<div class="back-content middle">
-          <!---- Back Avatar ---->            
-            	<img src="img/me2.jpg" alt="Avatar" class="avatar">         
-              <!----- Back Text ----->         
-            	<h2>Travis Trotto</h2>
-                <span>Future Software Engineer</span>
-                <!--- Social Icons ---->
-                <div class ="sm">
-                	<a href="#"><i class="fab fa-facebook-f"></i></a>
-                  <a href="#"><i class="fab fa-twitter"></i></a>
-                  <a href="#"><i class="fab fa-youtube"></i></a>
-                  <a href="#"><i class="fab fa-instagram"></i></a>
-                </div>
-        	</div>
-      <!-----------b----------->
+      <!------ End 3DFlipCard ------> 
+  <!-- Contact -->
+  <div id="myDIV" style="display:none">
+    <div id="mycontact">
+        <div id="mydivheader">Contact (Move Me!)</div>
+            <p>• <a href="mailto:travis.trotto@gmail.com">travis.trotto@gmail.com</a></p>
+            <p>• (718) 619-6060</p>
       </div>
+      <script src="draggable_contact.js"></script>
   </div>
-<!------ End 3DFlipCard ------>
 
-  <!-- Draggable DIV -->
-  <div class="draggables">
-    <div id="mydiv">
-      <div id="mydivheader">Languages Known</div>
+  <!-- Work Experience -->
+  <div id="workExperience" style="display:none">
+    <div id="mywork">
+        <div id="mydivheader">Experience (Select One)</div>     
+        <div class="tab">
+          <button class="tablinks" onclick="openCity(event, 'job1')">Lifestyles</button>
+          <button class="tablinks" onclick="openCity(event, 'job2')">Davis</button>
+          <button class="tablinks" onclick="openCity(event, 'job3')">Freelance</button>
+        </div>
+
+        <!-- Jobs -->
+        <div id="job1" class="tabcontent">
+          <h3>Front-End Developer</h3>
+          <h5>Lifestyles for the Disabled • 2018 – 2020</h5>
+       
+
+          <p>• Designed Online Store fronts hosted on Wordpress using HTML5, CSS & Javascipt.</p>
+          <p>• Worked with customers one-on-one to create a suitable store front and checkout process that fits their needs</p>
+          <p>• Worked with external companies for APIs, database management, and payment gateways.</p>
+        </div>
+
+        <div id="job2" class="tabcontent">
+          <h3>Data Entry Specialist</h3>
+          <h5>Davis Law Group, LLC. • 2018 – 2020</h5>
+          <p>• Entered data into a Client Database System</p>
+          <p>• Ran reports, printing, scanning & faxing</p>
+          <p>• Proficient use of Microsoft Excel</p>
+        </div>
+
+        <div id="job3" class="tabcontent">
+          <h3>Graphic Design</h3>
+          <h5>Freelance • 2016 – Current</h5>
+          <p>• Entered data into a Client Database System</p>
+          <p>• Ran reports, printing, scanning & faxing</p>
+          <p>• Proficient use of Microsoft Excel</p>
+        </div>
+
+        <!-- Make Jobs Draggable -->
+        <script src="draggable_work.js"></script>
+        <script>
+        function openCity(evt, cityName) {
+          var i, tabcontent, tablinks;
+
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+          }
+          document.getElementById(cityName).style.display = "block";
+          evt.currentTarget.className += " active";
+
+        }
+        </script>
+      </div>
+      <script src="draggable_contact.js"></script>
+  </div>
+  <!-- Languages -->
+  <div id="languagesKnown" style="display:none">
+  <div id="mylanguages">
+    <div id="mydivheader">Languages Known</div>
           <p>• C++</p>
           <p>• Python</p>
           <p>• HTML5, CSS & JavaScript</p>
           <p>• SQL</p>
           <p>• PHP</p>
-    </div>
-    <script src="draggable_div.js"></script>
-    <!-- End Draggable DIV -->
-
-    <!-- Draggable Contact -->
-    <div id="mycontact">
-      <div id="mycontactheader">Contact</div>
-          <p>travis.trotto@gmail.com</p>
-          <p>(718) 619-6060</p>
-    </div>
-    <script src="draggable_contact.js"></script>
   </div>
-  <!-- End Draggable DIV -->
+    <script src="draggable_div.js"></script>
+  </div>
+  <!-- Projects -->
+  <div id="projects" style="display:none">
+    <div id="myprojects">
+      <div id="mydivheader">Works</div>
+      <div id="long">
+        <!-- Works -->
+        <a href="https://shop.teestyles.com/staten_island_zoo/shop/home/">
+        <img id="workLogo" src="img/work1.png">
+            <h4>The Fragrance Club</h4></a>
+            <p>Web Developer & Host - 2018</p>
+            <h6>Subscription Service • HTML, CSS, JavaScript, PHP • Platform: Shopify</h6>
+        <br>
+        <hr class="line">
 
+        <a href="https://www.thefragrance.club/">
+        <img id="workLogo" src="img/unnamed.png">
+            <h4>Staten Island Zoo Uniforms</h4></a>
+            <p>Web Designer</p>
+            <h6>Web Store •  HTML, CSS, JavaScript • Platform: Wordpress</h6>
+        <br>
+        <hr class="line">
 
+      </div>
+    </div>
+  </div>
+  <script src="draggable_projects.js"></script>
 </div>
-
-
-<script>
-var slideIndex = 0;
-showSlides();
-
-function showSlides() {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}    
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 2000); // Change image every 2 seconds
-}
-</script>
-
 </body>
 
+
+
+<footer id="footer">
+    <!--<p style="text-align:center; color:white;"> Move Your Mouse for About Me. </p>
+    -->
+    <div style="text-align:center;">
+      <button onclick="myFunction1()" class="myButton">Contact</button>
+      <button onclick="myFunction3()" class="myButton">Works</button>
+      <button onclick="myFunction4()" class="myButton">Experience</button>
+      <button onclick="myFunction2()" class="myButton">Languages</button>
+    </div>
+    <div style="text-align:center; padding-top: 25px">
+      <a href="https://drive.google.com/file/d/1PF06nsx-MY6je4fbEWnjo5zO4dTKes9-/view?usp=sharing"><button class="myButton2">Software Engineering Resume</button></a>
+    </div>  
+    <div class="directory" style="text-align: left; padding: 40px;">
+        <p>© Travis Trotto 2021</p>
+    </div>
+</footer>
 </html>
