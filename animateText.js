@@ -1,5 +1,3 @@
-function myFunction(){
-
 var app = document.getElementById('app');
 
 var typewriter = new Typewriter(app, {
@@ -15,4 +13,3 @@ typewriter.typeString('Hello World!')
     .typeString('<strong>altered!</strong>')
     .pauseFor(2500)
     .start();
-}
