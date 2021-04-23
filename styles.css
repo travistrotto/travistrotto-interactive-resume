@@ -71,6 +71,7 @@ body{
 .back {
 	background: #f1f1f1;
 	transform: perspective(600px) rotateY(180deg);
+	height: 95%;
 }
 
 /* Card Back Text */
@@ -119,79 +120,4 @@ body{
   padding-top: 8px;
   top: 8px;
   left: 16px;
-}
-
-#app {
-  padding-left: 4px;
-}
-
-.container {
-
-}
-
-.draggables {
-
-}
-
-#mycontact {
-  width: 215px;
-  height: 140px;
-  position: absolute;
-  z-index: 9;
-  background-color: #f1f1f1;
-  border: 1px solid #d3d3d3;
-  text-align: left;
-  right: 390px;
-  bottom: 466px;
-}
-
-#mycontact p {
-	font-style: italic;
-	padding-top: 2px;
-	padding-left: 6px;
-	padding-right: 6px;
-
-
-
-}
-
-#mycontactheader {
-  text-align: center;
-  padding: 10px;
-  cursor: move;
-  z-index: 10;
-  background-color: #2c3e50;
-  color: #fff;
-}
-
-#mydiv {
-
-  width: 215px;
-  height: 140px;
-  position: absolute;
-  z-index: 9;
-  background-color: #f1f1f1;
-  border: 1px solid #d3d3d3;
-  text-align: left;
-  right: 390px;
-  bottom: 300px;
-
-  overflow:hidden;
-}
-
-#mydiv p {
-	/* font-style: italic; */
-	padding-top: 2px;
-	padding-left: 6px;
-	padding-right: 6px;
-
-}
-
-#mydivheader {
-  text-align: center;
-  padding: 10px;
-  cursor: move;
-  z-index: 10;
-  background-color: #2c3e50;
-  color: #fff;
 }
