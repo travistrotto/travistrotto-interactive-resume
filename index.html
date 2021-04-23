@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,8 +12,7 @@
     -
     -->
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="animateText.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/TypewriterJS/2.17.0/core.min.js"></script>
 <script src="https://kit.fontawesome.com/11c986c8ed.js"></script>
 <link href="styles.css" rel="stylesheet" type="text/css">
 <link href="slideshow.css" rel="stylesheet" type="text/css">
@@ -22,47 +21,68 @@
 
 
 <body>
+<div class="container">
 
-	<!-------- 3DFlipCard -------->
-    
+<!-------- 3DFlipCard -------->  
 	<div class="card middle">    	
-    	<div class="front">
-        	
-        <!----- Front Image ----->
+    	<div class="front">      	
+      <!----- Front Image ----->
        		<div class="mySlides fade"><img src="img/me.jpg" alt="" width="100%"></div>
           <div class="mySlides fade"><img src="img/me.jpg" alt="" width="100%"></div>
 
 
-          <div class="top-left"><h2>Travis Trotto</h2>
-            <h1 id="example"></h1>
-
-          <div id="app"></div>
+          <div class="top-left-text"><h2>Travis Trotto</h2>
+            <div id="app"></div>
           </div>
-
-
-
-        <!-----------f----------->
-        
-        </div>        
-        <div class ="back">
+      </div>
+      <script src="hacker_text.js"></script>
+      <!-----------f----------->          
+      <div class ="back">
         	<div class="back-content middle">
-            <!---- Back Avatar ---->            
+          <!---- Back Avatar ---->            
             	<img src="img/me2.jpg" alt="Avatar" class="avatar">         
-        	<!----- Back Text ----->         
-            	<h2>Travis Trotto - Test</h2>
+              <!----- Back Text ----->         
+            	<h2>Travis Trotto</h2>
                 <span>Future Software Engineer</span>
-            <!--- Social Icons ---->
+                <!--- Social Icons ---->
                 <div class ="sm">
                 	<a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-youtube"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                 </div>
-            <!---------b----------->
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#"><i class="fab fa-youtube"></i></a>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
         	</div>
-        </div>
+      <!-----------b----------->
+      </div>
+  </div>
+<!------ End 3DFlipCard ------>
+
+  <!-- Draggable DIV -->
+  <div class="draggables">
+    <div id="mydiv">
+      <div id="mydivheader">Languages Known</div>
+          <p>• C++</p>
+          <p>• Python</p>
+          <p>• HTML5, CSS & JavaScript</p>
+          <p>• SQL</p>
+          <p>• PHP</p>
     </div>
-    <!------ End 3DFlipCard ------>
+    <script src="draggable_div.js"></script>
+    <!-- End Draggable DIV -->
+
+    <!-- Draggable Contact -->
+    <div id="mycontact">
+      <div id="mycontactheader">Contact</div>
+          <p>travis.trotto@gmail.com</p>
+          <p>(718) 619-6060</p>
+    </div>
+    <script src="draggable_contact.js"></script>
+  </div>
+  <!-- End Draggable DIV -->
+
+
+</div>
+
 
 <script>
 var slideIndex = 0;
