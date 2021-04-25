@@ -1,5 +1,5 @@
 ## My interactive resume
-A simple web page featuring interactive links to my contact, eperience, projects, resume, LinkedIn, GitHub &amp; etc...
+A simple web page featuring interactive links to my contact, experience, projects, resume, LinkedIn, GitHub &amp; etc...
 
 
 ![image](https://user-images.githubusercontent.com/54992930/116003536-5ef5a380-a5cc-11eb-80df-15df4b3bf396.png)
