@@ -3,7 +3,7 @@ A simple web page featuring interactive links to my contact, experience, project
 
 Programmed in HTML5, CSS & JavaScript; Hosted on Netlify
 
-## https://travistrotto.netlify.app/
+## https://travistrotto-interactive.netlify.app/
 
 ![image](https://user-images.githubusercontent.com/54992930/116003536-5ef5a380-a5cc-11eb-80df-15df4b3bf396.png)
 Features a spinning card on hover and draggable elements containing resume information
